@@ -1,0 +1,2 @@
+# HR-Workforce-Analytics-Employee-Performance-Dashboard
+HR Workforce Analytics project using Python, SQL, and Power BI to analyze employee performance, attrition, salary, attendance, and departmental trends. The project delivers key HR KPIs, interactive dashboards, actionable insights, and data-driven recommendation to improve workforce productivity, employee retention, and strategic workforce planning.
