@@ -9,20 +9,19 @@ The project transforms raw employee data into a structured analytical solution u
 
 Organizations need reliable workforce insights to make informed decisions about employee retention, productivity, performance, and workforce planning. Without structured analytics, it can be difficult to identify:
 
-Which departments have the largest workforce and highest employee exits
+• Which departments have the largest workforce and highest employee exits
 
-What factors are associated with employee turnover
+• What factors are associated with employee turnover
 
-How employee performance varies across departments
+• How employee performance varies across departments
 
-How salary is distributed across the workforce
+• How salary is distributed across the workforce
 
-Whether overtime, job satisfaction, engagement, and work-life balance differ between active and exited employees
+• Whether overtime, job satisfaction, engagement, and work-life balance differ between active and exited employees
 
-Which departments demonstrate higher average project completion
+• Which departments demonstrate higher average project completion
 
 This project addresses these requirements through an integrated Python, SQL, statistical analysis, and Power BI workflow.
-
 ## 🎯 Project Objectives
 
 The project was developed to:
@@ -55,99 +54,68 @@ The project was developed to:
 
 The raw dataset contains 10,050 employee records and 29 features covering:
 
-Employee demographics
+• Employee demographics
 
-Department and job role
+• Department and job role
 
-Location
+• Location
 
-Employment type
+• Employment type
 
-Joining and exit dates
+• Joining and exit dates
 
-Years at company
+• Years at company
 
-Total work experience
+• Total work experience
 
-Education
+• Education
 
-Salary
+• Salary
 
-Performance rating
+• Performance rating
 
-Job satisfaction
+• Job satisfaction
 
-Work-life balance
+• Work-life balance
 
-Monthly and overtime hours
+• Monthly and overtime hours
 
-Attendance
+• Attendance
 
-Projects completed
+• Projects completed
 
-Training hours
+• Training hours
 
-Promotions
+• Promotions
 
-Sick days
+• Sick days
 
-Manager rating
+• Manager rating
 
-Employee engagement
+• Employee engagement
 
-Attrition
+• Attrition
 
-Attrition reason
+• Attrition reason
 
-Remote-work status
+• Remote-work status
 
 After duplicate removal, the analysis dataset contains 10,047 records.
 
-🛠️ Technology Stack
+## 🛠️ Technology Stack
 
-Technology
-
-Purpose
-
-Python
-
-Data cleaning, preprocessing, EDA, KPI calculation and analysis
-
-Pandas
-
-Data manipulation and transformation
-
-NumPy
-
-Numerical analysis
-
-Matplotlib
-
-Data visualization
-
-Seaborn
-
-Statistical and exploratory visualizations
-
-SQL / SQLite
-
-Workforce analysis and HR KPI queries
-
-Jupyter Notebook
-
-Integrated analysis environment
-
-Power BI
-
-Interactive dashboard and visualization
-
-Statistics / SciPy
-
-Statistical comparison and hypothesis testing
-
-Git & GitHub
-
-Version control and project submission
+| Technology | Purpose |
+|---|---|
+| **Python** | Data cleaning, preprocessing, EDA, KPI calculation and analysis |
+| **Pandas** | Data manipulation and transformation |
+| **NumPy** | Numerical analysis |
+| **Matplotlib** | Data visualization |
+| **Seaborn** | Statistical and exploratory visualizations |
+| **SQL / SQLite** | Workforce analysis and HR KPI queries |
+| **Jupyter Notebook** | Integrated analysis environment |
+| **Power BI** | Interactive dashboard and visualization |
+| **Statistics / SciPy** | Statistical comparison and hypothesis testing |
+| **Git & GitHub** | Version control and project submission |
 
 ## 🔄 Project Workflow
 
@@ -171,7 +139,7 @@ Power BI Dashboard
 ↓
 Insights & Recommendations
 
-## 1️⃣ Data Preparation
+## 1️. Data Preparation
 
 The employee dataset was cleaned and prepared using **Python and Pandas**.
 
@@ -214,7 +182,7 @@ Missing values were identified in:
 
 **Exit_Date** was converted using `pd.to_datetime(..., errors="coerce")` so that missing or invalid exit dates could be represented safely.
 
-## 2️⃣ Exploratory Data Analysis
+## 2️. Exploratory Data Analysis
 
 EDA was performed to understand workforce characteristics and identify patterns across major HR dimensions.
 
@@ -289,7 +257,7 @@ Productivity is measured using average `Projects_Completed` per department.
 
 **Marketing records the highest average project completion.**
 
-## 3️⃣ HR Key Performance Indicators
+## 3️. HR Key Performance Indicators
 
 | **KPI**                       |        **Value** |
 | ----------------------------- | ---------------: |
@@ -309,7 +277,7 @@ Productivity is measured using average `Projects_Completed` per department.
 * **Performance Score:** Mean employee `Performance_Rating`.
 * **Department Productivity:** Average `Projects_Completed` by department.
 
-## 4️⃣ Employee Turnover Analysis
+## 4️. Employee Turnover Analysis
 
 The analysis compared active and exited employees across key workforce factors.
 
@@ -330,7 +298,7 @@ The comparison indicates that exited employees have:
 
 These differences provide useful indicators for HR retention strategies.
 
-## 5️⃣ Statistical Analysis
+## 5️. Statistical Analysis
 
 An **independent two-sample t-test** was performed to compare active and exited employees across key numerical factors.
 
@@ -350,7 +318,7 @@ Salary has a p-value of **0.0507**, so it is not considered statistically signif
 
 > **Statistical association does not by itself establish causation. The results indicate differences in this dataset and should be interpreted alongside business context.**
 
-## 6️⃣ SQL Analysis
+## 6️. SQL Analysis
 
 SQL analysis was performed within the Jupyter Notebook using **SQLite**. The cleaned employee dataset was loaded into an SQLite database, and SQL queries were executed to calculate workforce KPIs and analyze departments, salary, performance, productivity, and attrition.
 
@@ -491,13 +459,13 @@ SELECT
 FROM employees;
 ```
 
-## 7️⃣ Power BI Dashboard
+## 7️. Power BI Dashboard
 
 Two Power BI dashboard views were developed.
 
 ### **Dashboard 1 — HR Workforce Overview**
 
-The second dashboard provides:
+The First dashboard provides:
 
 * **Total Employees**
 * **Active Employees**
@@ -526,9 +494,9 @@ Average Salary        : 1,393,347.24
 Performance Score     : 3.51 / 5
 ```
 
-### **Dashboard 1 — Workforce & Employee Performance**
+### **Dashboard 2 — Workforce & Employee Performance**
 
-The first dashboard focuses on:
+The Second dashboard focuses on:
 
 * **Average performance by department**
 * **Department productivity**
@@ -550,10 +518,14 @@ The project includes **two interactive Power BI dashboard views.**
 
 ![HR Workforce Overview](Dashboard%20Images/HR%20Workforce%20Analytics%20%26%20Employee%20Performance%20Dashboard.png)
 
+
+
 ### Employee Performance & Attrition Analysis
 
 ![Employee Performance & Attrition Analysis](Dashboard%20Images/Employee%20Performance%20%26%20Attrition%20Analysis.png)
-## 8️⃣ Key Insights
+
+
+## 8️. Key Insights
 
 ### **Workforce**
 
@@ -606,7 +578,7 @@ The t-test indicates statistically significant differences between active and ex
 
 **Salary was not statistically significant at the 5% level.**
 
-## 9️⃣ HR Recommendations
+## 9️. HR Recommendations
 
 Based on the analysis, the following actions are recommended:
 
@@ -660,7 +632,7 @@ HR teams can use the Power BI dashboard to regularly monitor:
 * **Productivity**
 * **Department-level trends**
 
-## 🔟 Project Deliverables
+## 10. Project Deliverables
 
 | **Deliverable**           | **Description**                                                |
 | ------------------------- | -------------------------------------------------------------- |
@@ -672,41 +644,38 @@ HR teams can use the Power BI dashboard to regularly monitor:
 | **Dashboard Screenshots** | Visual documentation of dashboard outputs                      |
 | **README**                | Project methodology, SQL queries, insights and recommendations |
 
-## 1️⃣1️⃣ Repository Structure
+## 11. Repository Structure
 
-A recommended GitHub repository structure is:
+The repository is organized as follows:
+
 
 HR-Workforce-Analytics-Employee-Performance-Dashboard/
 │
 ├── README.md
 │
-├── data/
-│   ├── HR_Workforce_Analytics_Raw_Data.csv
-│   └── HR_Workforce_Analytics_Cleaned.csv
+├── Dataset/
+│   └── HR Workforce Analytics & Employee Performance Dashboard.csv
 │
 ├── Jupyter_notebook_HR Workforce Analytics/
-│   └── HR_Workforce_Analytics.ipynb
-│
+│   └── HR Workforce Analytics.ipynb
 │
 ├── Power BI/
-│   └── HR_Dashboard.pbix
+│   └── HR Workforce Analytics & Employee Performance Dashboard.pbix
 │
-└── Dashboard images/
+└── Dashboard Images/
     ├── Employee Performance & Attrition Analysis.png
-    └── HR_Workforce_Analytics & Employee Performance Dashboard.png
-```
+    └── HR Workforce Analytics & Employee Performance Dashboard.png
 
-## 1️⃣2️⃣ Conclusion
+## 12. Conclusion
 
-The **HR Workforce Analytics & Employee Performance Dashboard** provides an end-to-end analytical solution for understanding workforce behavior, employee performance, productivity, salary, and attrition.
+The HR Workforce Analytics & Employee Performance Dashboard provides an end-to-end analytical solution for understanding workforce behavior, employee performance, productivity, salary, and attrition.
 
-The project combines **Python, Pandas, SQL, SQLite, statistical analysis, and Power BI** to transform raw employee data into actionable HR insights.
+The project combines Python, Pandas, SQL, SQLite, statistical analysis, and Power BI to transform raw employee data into actionable HR insights.
 
-The analysis identifies important differences between active and exited employees, particularly in **job satisfaction, employee engagement, work-life balance, and overtime hours**. These findings can help HR teams design targeted retention initiatives, improve employee experience, monitor workforce productivity, and support evidence-based workforce planning.
+The analysis identifies important differences between active and exited employees, particularly in job satisfaction, employee engagement, work-life balance, and overtime hours. These findings can help HR teams design targeted retention initiatives, improve employee experience, monitor workforce productivity, and support evidence-based workforce planning.
 
 ## 👤 Author
 
-**Sanika Gawand**
+### Sanika Gawand
 
-**Skills Demonstrated:**
-Python • Pandas • NumPy • SQL • SQLite • Statistics • Power BI • Data Analysis • Data Visualization • Git • GitHub
+### Skills Demonstrated:Python • Pandas • NumPy • SQL • SQLite • Statistics • Power BI • Data Analysis • Data Visualization • Git • GitHub
