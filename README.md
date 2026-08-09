@@ -1,112 +1,175 @@
-Absolutely. Below is your **same content**, with only the Markdown formatting improved: proper **bold text**, **bullet points**, numbered lists, headings, tables, and code blocks. You can **copy everything below directly into your `README.md`**.
-
-````markdown
 # 📊 HR Workforce Analytics & Employee Performance Dashboard
-
 ## 📌 Project Overview
 
-The **HR Workforce Analytics & Employee Performance Dashboard** is an end-to-end data analytics project designed to analyze workforce structure, employee performance, productivity, salary, attendance, and employee attrition.
+The *HR Workforce Analytics & Employee Performance Dashboard is an end-to-end data analytics project designed to analyze workforce structure, employee performance, productivity, salary, attendance, and employee attrition.
 
-The project transforms raw employee data into a structured analytical solution using **Python, SQL, Statistics, and Power BI.** The objective is to provide HR stakeholders with measurable workforce KPIs, identify patterns associated with employee turnover, compare departments, and support data-driven workforce planning and retention strategies.
+The project transforms raw employee data into a structured analytical solution using Python, SQL, Statistics, and Power BI. The objective is to provide HR stakeholders with measurable workforce KPIs, identify patterns associated with employee turnover, compare departments, and support data-driven workforce planning and retention strategies.
 
 ## 🎯 Business Problem
 
 Organizations need reliable workforce insights to make informed decisions about employee retention, productivity, performance, and workforce planning. Without structured analytics, it can be difficult to identify:
 
-- **Which departments have the largest workforce and highest employee exits**
-- **What factors are associated with employee turnover**
-- **How employee performance varies across departments**
-- **How salary is distributed across the workforce**
-- **Whether overtime, job satisfaction, engagement, and work-life balance differ between active and exited employees**
-- **Which departments demonstrate higher average project completion**
+Which departments have the largest workforce and highest employee exits
 
-This project addresses these requirements through an integrated **Python, SQL, statistical analysis, and Power BI workflow.**
+What factors are associated with employee turnover
+
+How employee performance varies across departments
+
+How salary is distributed across the workforce
+
+Whether overtime, job satisfaction, engagement, and work-life balance differ between active and exited employees
+
+Which departments demonstrate higher average project completion
+
+This project addresses these requirements through an integrated Python, SQL, statistical analysis, and Power BI workflow.
 
 ## 🎯 Project Objectives
 
 The project was developed to:
 
-1. **Clean and preprocess employee data**
-2. **Perform exploratory data analysis (EDA)**
-3. **Analyze workforce composition and departmental trends**
-4. **Analyze employee performance and productivity**
-5. **Analyze employee attrition and retention**
-6. **Analyze salary distribution**
-7. **Analyze attendance and working-hour patterns**
-8. **Calculate key HR KPIs**
-9. **Identify factors associated with employee turnover**
-10. **Perform statistical analysis using an independent two-sample t-test**
-11. **Develop interactive Power BI dashboards**
-12. **Generate actionable HR recommendations**
+1. Clean and preprocess employee data
+
+2. Perform exploratory data analysis (EDA)
+
+3. Analyze workforce composition and departmental trends
+
+4. Analyze employee performance and productivity
+
+5. Analyze employee attrition and retention
+
+6. Analyze salary distribution
+
+7. Analyze attendance and working-hour patterns
+
+8. Calculate key HR KPIs
+
+9. Identify factors associated with employee turnover
+
+10. Perform statistical analysis using an independent two-sample t-test
+
+11. Develop interactive Power BI dashboards
+
+12. Generate actionable HR recommendations
 
 ## 📁 Dataset Overview
 
-The raw dataset contains **10,050 employee records and 29 features** covering:
+The raw dataset contains 10,050 employee records and 29 features covering:
 
-- **Employee demographics**
-- **Department and job role**
-- **Location**
-- **Employment type**
-- **Joining and exit dates**
-- **Years at company**
-- **Total work experience**
-- **Education**
-- **Salary**
-- **Performance rating**
-- **Job satisfaction**
-- **Work-life balance**
-- **Monthly and overtime hours**
-- **Attendance**
-- **Projects completed**
-- **Training hours**
-- **Promotions**
-- **Sick days**
-- **Manager rating**
-- **Employee engagement**
-- **Attrition**
-- **Attrition reason**
-- **Remote-work status**
+Employee demographics
 
-After duplicate removal, the analysis dataset contains **10,047 records**.
+Department and job role
 
-## 🛠️ Technology Stack
+Location
 
-| **Technology** | **Purpose** |
-|---|---|
-| **Python** | Data cleaning, preprocessing, EDA, KPI calculation and analysis |
-| **Pandas** | Data manipulation and transformation |
-| **NumPy** | Numerical analysis |
-| **Matplotlib** | Data visualization |
-| **Seaborn** | Statistical and exploratory visualizations |
-| **SQL / SQLite** | Workforce analysis and HR KPI queries |
-| **Jupyter Notebook** | Integrated analysis environment |
-| **Power BI** | Interactive dashboard and visualization |
-| **Statistics / SciPy** | Statistical comparison and hypothesis testing |
-| **Git & GitHub** | Version control and project submission |
+Employment type
+
+Joining and exit dates
+
+Years at company
+
+Total work experience
+
+Education
+
+Salary
+
+Performance rating
+
+Job satisfaction
+
+Work-life balance
+
+Monthly and overtime hours
+
+Attendance
+
+Projects completed
+
+Training hours
+
+Promotions
+
+Sick days
+
+Manager rating
+
+Employee engagement
+
+Attrition
+
+Attrition reason
+
+Remote-work status
+
+After duplicate removal, the analysis dataset contains 10,047 records.
+
+🛠️ Technology Stack
+
+Technology
+
+Purpose
+
+Python
+
+Data cleaning, preprocessing, EDA, KPI calculation and analysis
+
+Pandas
+
+Data manipulation and transformation
+
+NumPy
+
+Numerical analysis
+
+Matplotlib
+
+Data visualization
+
+Seaborn
+
+Statistical and exploratory visualizations
+
+SQL / SQLite
+
+Workforce analysis and HR KPI queries
+
+Jupyter Notebook
+
+Integrated analysis environment
+
+Power BI
+
+Interactive dashboard and visualization
+
+Statistics / SciPy
+
+Statistical comparison and hypothesis testing
+
+Git & GitHub
+
+Version control and project submission
 
 ## 🔄 Project Workflow
 
-```text
 Raw Employee Data
-        ↓
+↓
 Data Cleaning & Validation
-        ↓
+↓
 Data Transformation
-        ↓
+↓
 Exploratory Data Analysis
-        ↓
+↓
 HR KPI Calculation
-        ↓
+↓
 Employee Turnover Analysis
-        ↓
+↓
 Statistical Analysis
-        ↓
+↓
 SQL Analysis
-        ↓
+↓
 Power BI Dashboard
-        ↓
+↓
 Insights & Recommendations
-````
 
 ## 1️⃣ Data Preparation
 
@@ -485,14 +548,11 @@ The first dashboard focuses on:
 
 The project includes **two interactive Power BI dashboard views.**
 
-### **HR Workforce Overview**
+![HR Workforce Overview](Dashboard%20Images/HR%20Workforce%20Analytics%20%26%20Employee%20Performance%20Dashboard.png)
 
-![HR Workforce Dashboard](images/hr_dashboard_overview.png)
+### Employee Performance & Attrition Analysis
 
-### **Employee Performance & Attrition Analysis**
-
-![HR Performance & Attrition Dashboard](images/hr_dashboard_insights.png)
-
+![Employee Performance & Attrition Analysis](Dashboard%20Images/Employee%20Performance%20%26%20Attrition%20Analysis.png)
 ## 8️⃣ Key Insights
 
 ### **Workforce**
