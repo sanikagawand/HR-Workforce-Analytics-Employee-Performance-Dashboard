@@ -145,18 +145,18 @@ The employee dataset was cleaned and prepared using **Python and Pandas**.
 
 ### **Data Preparation Steps**
 
-* **Imported the raw CSV dataset**
-* **Inspected dataset dimensions and column data types**
-* **Checked duplicate records**
-* **Checked missing values**
-* **Removed duplicate rows**
-* **Handled missing categorical values using the mode**
-* **Handled missing numerical values using the median**
-* **Converted Joining_Date and Exit_Date into datetime format**
-* **Validated categorical values**
-* **Reviewed numerical value distributions**
-* **Prepared the final analysis-ready dataset**
-* **Loaded the cleaned data into SQLite for SQL analysis**
+* Imported the raw CSV dataset
+* Inspected dataset dimensions and column data types
+* Checked duplicate records
+* Checked missing values
+* Removed duplicate rows
+* Handled missing categorical values using the mode
+* Handled missing numerical values using the median
+* Converted `Joining_Date` and `Exit_Date` into datetime format
+* Validated categorical values
+* Reviewed numerical value distributions
+* Prepared the final analysis-ready dataset
+* Loaded the cleaned data into SQLite for SQL analysis
 
 ### **Duplicate Handling**
 
@@ -171,16 +171,16 @@ The duplicate records were removed using Pandas `drop_duplicates()`.
 
 Missing values were identified in:
 
-* **Exit_Date**
-* **Education_Level**
-* **Job_Satisfaction**
-* **Attendance_Percentage**
-* **Training_Hours**
-* **Manager_Rating**
+* `Exit_Date`
+* `Education_Level`
+* `Job_Satisfaction`
+* `Attendance_Percentage`
+* `Training_Hours`
+* `Manager_Rating`
 
-**Education_Level** was imputed using the mode, while numerical fields such as job satisfaction, attendance, training hours, and manager rating were imputed using their median values.
+`Education_Level` was imputed using the mode, while numerical fields such as job satisfaction, attendance, training hours, and manager rating were imputed using their median values.
 
-**Exit_Date** was converted using `pd.to_datetime(..., errors="coerce")` so that missing or invalid exit dates could be represented safely.
+`Exit_Date` was converted using `pd.to_datetime(..., errors="coerce")` so that missing or invalid exit dates could be represented safely.
 
 ## 2️. Exploratory Data Analysis
 
@@ -199,12 +199,12 @@ The workforce is distributed across six departments:
 
 | **Department** | **Employees** |
 | -------------- | ------------: |
-| **IT**         |     **2,684** |
-| **Sales**      |     **2,042** |
-| **Operations** |     **1,909** |
-| **Finance**    |     **1,230** |
-| **Marketing**  |     **1,201** |
-| **HR**         |       **981** |
+| IT             |     2,684     |
+| Sales          |     2,042     |
+| Operations     |     1,909     |
+| Finance        |     1,230     |
+| Marketing      |     1,201     |
+| HR             |       981     |
 
 **IT is the largest department by employee count.**
 
@@ -218,12 +218,12 @@ Average salary by department:
 
 | **Department** | **Average Salary** |
 | -------------- | -----------------: |
-| **IT**         |   **1,555,932.05** |
-| **Finance**    |   **1,448,104.95** |
-| **Marketing**  |   **1,341,667.62** |
-| **Sales**      |   **1,337,171.92** |
-| **Operations** |   **1,280,940.13** |
-| **HR**         |   **1,278,803.71** |
+| IT             |   1,555,932.05     |
+| Finance        |   1,448,104.95     |
+| Marketing      |   1,341,667.62     |
+| Sales          |   1,337,171.92     |
+| Operations     |   1,280,940.13     |
+| HR             |   1,278,803.71     |
 
 **IT has the highest average salary among the departments.**
 
@@ -248,12 +248,12 @@ Productivity is measured using average `Projects_Completed` per department.
 
 | **Department** | **Average Projects Completed** |
 | -------------- | -----------------------------: |
-| **Marketing**  |                       **5.25** |
-| **IT**         |                       **5.23** |
-| **Finance**    |                       **5.23** |
-| **Operations** |                       **5.20** |
-| **Sales**      |                       **5.19** |
-| **HR**         |                       **5.07** |
+| Marketing      |                       5.25     |
+| IT             |                       5.23     |
+| Finance        |                       5.23     |
+| Operations     |                       5.20     |
+| Sales          |                       5.19     |
+| HR*            |                       5.07     |
 
 **Marketing records the highest average project completion.**
 
@@ -261,13 +261,13 @@ Productivity is measured using average `Projects_Completed` per department.
 
 | **KPI**                       |        **Value** |
 | ----------------------------- | ---------------: |
-| **Total Employees**           |       **10,047** |
-| **Active Employees**          |        **9,619** |
-| **Exited Employees**          |          **428** |
-| **Employee Retention Rate**   |       **95.74%** |
-| **Employee Attrition Rate**   |        **4.26%** |
-| **Average Salary**            | **1,393,347.24** |
-| **Overall Performance Score** |     **3.51 / 5** |
+| Total Employees               |        10,047    |
+| Active Employees              |         9,619    |
+| Exited Employees              |           428    |
+| Employee Retention Rate       |        95.74%    |
+| Employee Attrition Rate       |         4.26%    |
+| Average Salary                |  1,393,347.24    |
+| Overall Performance Score     |      3.51 / 5    |
 
 ### **KPI Definitions**
 
@@ -283,18 +283,18 @@ The analysis compared active and exited employees across key workforce factors.
 
 | **Factor**              | **Active Employees** | **Exited Employees** |
 | ----------------------- | -------------------: | -------------------: |
-| **Job Satisfaction**    |             **3.42** |             **2.52** |
-| **Overtime Hours**      |            **13.59** |            **17.55** |
-| **Salary**              |        **1,394,687** |        **1,363,229** |
-| **Employee Engagement** |             **3.47** |             **2.68** |
-| **Work-Life Balance**   |             **3.43** |             **2.92** |
+| Job Satisfaction        |             3.42     |             2.52     |
+| Overtime Hours          |            13.59     |            17.55     |
+| Salary                  |        1,394,687     |        1,363,229     |
+| Employee Engagement     |             3.47     |             2.68     |
+| Work-Life Balance       |             3.43     |             2.92     |
 
 The comparison indicates that exited employees have:
 
-* **Lower average job satisfaction**
-* **Higher average overtime hours**
-* **Lower average employee engagement**
-* **Lower average work-life balance**
+* Lower average job satisfaction
+* Higher average overtime hours
+* Lower average employee engagement
+* Lower average work-life balance
 
 These differences provide useful indicators for HR retention strategies.
 
@@ -306,11 +306,11 @@ An **independent two-sample t-test** was performed to compare active and exited 
 
 | **Factor**              | **t-statistic** | **p-value** | **Result**                |
 | ----------------------- | --------------: | ----------: | ------------------------- |
-| **Job Satisfaction**    |      **17.105** | **< 0.001** | **Significant**           |
-| **Overtime Hours**      |      **-7.356** | **< 0.001** | **Significant**           |
-| **Salary**              |       **1.959** |  **0.0507** | **Not significant at 5%** |
-| **Employee Engagement** |      **18.847** | **< 0.001** | **Significant**           |
-| **Work-Life Balance**   |       **9.731** | **< 0.001** | **Significant**           |
+| Job Satisfaction        |      17.105     | < 0.001     | Significant               |
+| Overtime Hours          |      -7.356     | < 0.001     | Significant               |
+| Salary                  |       1.959     |  0.0507     | Not significant at 5%     |
+| Employee Engagement     |      18.847     | < 0.001     | Significant               |
+| Work-Life Balance       |       9.731     | < 0.001     | Significant               |
 
 At the **5% significance level**, Job Satisfaction, Overtime Hours, Employee Engagement, and Work-Life Balance show statistically significant differences between active and exited employees.
 
@@ -467,20 +467,20 @@ Two Power BI dashboard views were developed.
 
 The First dashboard provides:
 
-* **Total Employees**
-* **Active Employees**
-* **Exited Employees**
-* **Attrition Rate**
-* **Retention Rate**
-* **Average Salary**
-* **Average Performance Score**
-* **Employees by Department**
-* **Employees by Employment Type**
-* **Attrition by Department**
-* **Monthly Hours vs Performance Rating**
-* **Salary Distribution**
-* **Department slicer**
-* **Gender distribution**
+* Total Employees
+* Active Employees
+* Exited Employees
+* Attrition Rate
+* Retention Rate
+* Average Salary
+* Average Performance Score
+* Employees by Department
+* Employees by Employment Type
+* Attrition by Department
+* Monthly Hours vs Performance Rating
+* Salary Distribution
+* Department slicer
+* Gender distribution
 
 ### **Dashboard KPI Snapshot**
 
@@ -498,29 +498,33 @@ Performance Score     : 3.51 / 5
 
 The Second dashboard focuses on:
 
-* **Average performance by department**
-* **Department productivity**
-* **Attrition reasons**
-* **Attrition by years at company**
-* **Key HR insights**
-* **HR recommendations**
+* Average performance by department
+* Department productivity
+* Attrition reasons
+* Attrition by years at company
+* Key HR insights
+* HR recommendations
 
 ### **Key dashboard observations**
 
-* **IT has the highest employee exit count.**
-* **Better Opportunity is the leading recorded attrition reason.**
-* **Work-Life Balance is another major attrition reason.**
-* **Marketing has the highest average project completion.**
-* **Performance Rating 4 has the highest employee count.**
-* **Retention and performance indicators provide a consolidated view of workforce health.**
+* IT has the highest employee exit count.
+* Better Opportunity is the leading recorded attrition reason.
+* Work-Life Balance is another major attrition reason.
+* Marketing has the highest average project completion.
+* Performance Rating 4 has the highest employee count.
+* Retention and performance indicators provide a consolidated view of workforce health.
 
 The project includes **two interactive Power BI dashboard views.**
+
+### HR Workforce Overview
+
 
 ![HR Workforce Overview](Dashboard%20Images/HR%20Workforce%20Analytics%20%26%20Employee%20Performance%20Dashboard.png)
 
 
 
 ### Employee Performance & Attrition Analysis
+
 
 ![Employee Performance & Attrition Analysis](Dashboard%20Images/Employee%20Performance%20%26%20Attrition%20Analysis.png)
 
@@ -571,10 +575,10 @@ Exited employees also show higher average overtime:
 
 The t-test indicates statistically significant differences between active and exited employees for:
 
-* **Job Satisfaction**
-* **Overtime Hours**
-* **Employee Engagement**
-* **Work-Life Balance**
+* Job Satisfaction
+* Overtime Hours
+* Employee Engagement
+* Work-Life Balance
 
 **Salary was not statistically significant at the 5% level.**
 
@@ -590,19 +594,19 @@ Prioritize retention initiatives for departments with higher employee exit count
 
 Because **Better Opportunity** is the leading recorded attrition reason, strengthen:
 
-* **Career development programs**
-* **Internal mobility**
-* **Promotion pathways**
-* **Skill development opportunities**
+* Career development programs
+* Internal mobility
+* Promotion pathways
+* Skill development opportunities
 
 ### **3. Improve Work-Life Balance**
 
 The analysis shows lower work-life balance among exited employees. HR can review:
 
-* **Workload allocation**
-* **Flexible working arrangements**
-* **Overtime expectations**
-* **Employee well-being programs**
+* Workload allocation
+* Flexible working arrangements
+* Overtime expectations
+* Employee well-being programs
 
 ### **4. Monitor Overtime**
 
@@ -624,13 +628,13 @@ Continue monitoring average project completion by department to identify product
 
 HR teams can use the Power BI dashboard to regularly monitor:
 
-* **Attrition Rate**
-* **Retention Rate**
-* **Workforce Size**
-* **Performance**
-* **Salary**
-* **Productivity**
-* **Department-level trends**
+* Attrition Rate
+* Retention Rate
+* Workforce Size
+* Performance
+* Salary
+* Productivity
+* Department-level trends
 
 ## 10. Project Deliverables
 
@@ -648,7 +652,7 @@ HR teams can use the Power BI dashboard to regularly monitor:
 
 The repository is organized as follows:
 
-
+```text
 HR-Workforce-Analytics-Employee-Performance-Dashboard/
 │
 ├── README.md
@@ -668,14 +672,14 @@ HR-Workforce-Analytics-Employee-Performance-Dashboard/
 
 ## 12. Conclusion
 
-The HR Workforce Analytics & Employee Performance Dashboard provides an end-to-end analytical solution for understanding workforce behavior, employee performance, productivity, salary, and attrition.
+The ***HR Workforce Analytics & Employee Performance Dashboard*** provides an end-to-end analytical solution for understanding workforce behavior, employee performance, productivity, salary, and attrition.
 
-The project combines Python, Pandas, SQL, SQLite, statistical analysis, and Power BI to transform raw employee data into actionable HR insights.
+The project combines ***Python, Pandas, SQL, SQLite, statistical analysis, and Power BI*** to transform raw employee data into actionable HR insights.
 
-The analysis identifies important differences between active and exited employees, particularly in job satisfaction, employee engagement, work-life balance, and overtime hours. These findings can help HR teams design targeted retention initiatives, improve employee experience, monitor workforce productivity, and support evidence-based workforce planning.
+The analysis identifies important differences between active and exited employees, particularly in ***job satisfaction, employee engagement, work-life balance, and overtime hours.*** These findings can help HR teams design targeted retention initiatives, improve employee experience, monitor workforce productivity, and support evidence-based workforce planning.
 
 ## 👤 Author
 
 ### Sanika Gawand
 
-### Skills Demonstrated:Python • Pandas • NumPy • SQL • SQLite • Statistics • Power BI • Data Analysis • Data Visualization • Git • GitHub
+***Skills Demonstrated:*** Python • Pandas • NumPy • SQL • SQLite • Statistics • Power BI • Data Analysis • Data Visualization • Git • GitHub
