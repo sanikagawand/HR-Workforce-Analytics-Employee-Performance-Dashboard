@@ -670,6 +670,8 @@ HR-Workforce-Analytics-Employee-Performance-Dashboard/
     ├── Employee Performance & Attrition Analysis.png
     └── HR Workforce Analytics & Employee Performance Dashboard.png
 
+```
+
 ## 12. Conclusion
 
 The ***HR Workforce Analytics & Employee Performance Dashboard*** provides an end-to-end analytical solution for understanding workforce behavior, employee performance, productivity, salary, and attrition.
