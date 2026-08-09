@@ -1,13 +1,13 @@
-📊 HR Workforce Analytics & Employee Performance Dashboard
+# 📊 HR Workforce Analytics & Employee Performance Dashboard
 
 
-📌 Project Overview
+## 📌 Project Overview
 
-The HR Workforce Analytics & Employee Performance Dashboard is an end-to-end data analytics project designed to analyze workforce structure, employee performance, productivity, salary, attendance, and employee attrition.
+The ***HR Workforce Analytics & Employee Performance Dashboard** is an end-to-end data analytics project designed to analyze workforce structure, employee performance, productivity, salary, attendance, and employee attrition.
 
-The project transforms raw employee data into a structured analytical solution using Python, SQL, Statistics, and Power BI. The objective is to provide HR stakeholders with measurable workforce KPIs, identify patterns associated with employee turnover, compare departments, and support data-driven workforce planning and retention strategies.
+The project transforms raw employee data into a structured analytical solution using **Python, SQL, Statistics, and Power BI.** The objective is to provide HR stakeholders with measurable workforce KPIs, identify patterns associated with employee turnover, compare departments, and support data-driven workforce planning and retention strategies.
 
-🎯 Business Problem
+## 🎯 Business Problem
 
 Organizations need reliable workforce insights to make informed decisions about employee retention, productivity, performance, and workforce planning. Without structured analytics, it can be difficult to identify:
 
@@ -25,7 +25,7 @@ Which departments demonstrate higher average project completion
 
 This project addresses these requirements through an integrated Python, SQL, statistical analysis, and Power BI workflow.
 
-🎯 Project Objectives
+## 🎯 Project Objectives
 
 The project was developed to:
 
@@ -53,9 +53,9 @@ Develop interactive Power BI dashboards
 
 Generate actionable HR recommendations
 
-📁 Dataset Overview
+## 📁 Dataset Overview
 
-The raw dataset contains 10,050 employee records and 29 features covering:
+The raw dataset contains **10,050 employee records and 29 features** covering:
 
 Employee demographics
 
@@ -103,55 +103,55 @@ Attrition reason
 
 Remote-work status
 
-After duplicate removal, the analysis dataset contains 10,047 records.
+After duplicate removal, the analysis dataset contains **10,047 records**.
 
-🛠️ Technology Stack
+## 🛠️ Technology Stack
 
-Technology
+**Technology**
 
-Purpose
+**Purpose**
 
-Python
+**Python**
 
 Data cleaning, preprocessing, EDA, KPI calculation and analysis
 
-Pandas
+**Pandas**
 
 Data manipulation and transformation
 
-NumPy
+**NumPy**
 
 Numerical analysis
 
-Matplotlib
+**Matplotlib**
 
 Data visualization
 
-Seaborn
+**Seaborn**
 
 Statistical and exploratory visualizations
 
-SQL / SQLite
+**SQL / SQLite**
 
 Workforce analysis and HR KPI queries
 
-Jupyter Notebook
+**Jupyter Notebook**
 
 Integrated analysis environment
 
-Power BI
+**Power BI**
 
 Interactive dashboard and visualization
 
-Statistics / SciPy
+**Statistics / SciPy**
 
 Statistical comparison and hypothesis testing
 
-Git & GitHub
+**Git & GitHub**
 
 Version control and project submission
 
-🔄 Project Workflow
+## 🔄 Project Workflow
 
 Raw Employee Data
         ↓
@@ -175,9 +175,9 @@ Insights & Recommendations
 
 ## 1. Data Preparation
 
-The employee dataset was cleaned and prepared using Python and Pandas.
+The employee dataset was cleaned and prepared using **Python and Pandas**.
 
-Data Preparation Steps
+### Data Preparation Steps
 
 Imported the raw CSV dataset
 
@@ -929,8 +929,8 @@ The project combines Python, Pandas, SQL, SQLite, statistical analysis, and Powe
 
 The analysis identifies important differences between active and exited employees, particularly in job satisfaction, employee engagement, work-life balance, and overtime hours. These findings can help HR teams design targeted retention initiatives, improve employee experience, monitor workforce productivity, and support evidence-based workforce planning.
 
-👤 Author
+## 👤 Author
 
 Sanika Gawand
 
-Skills Demonstrated:Python • Pandas • NumPy • SQL • SQLite • Statistics • Power BI • Data Analysis • Data Visualization • Git • GitHub
+Skills Demonstrated: Python • Pandas • NumPy • SQL • SQLite • Statistics • Power BI • Data Analysis • Data Visualization • Git • GitHub
