@@ -684,4 +684,4 @@ The analysis identifies important differences between active and exited employee
 
 ### Sanika Gawand
 
-***Skills Demonstrated:*** Python • Pandas • NumPy • SQL • SQLite • Statistics • Power BI • Data Analysis • Data Visualization • Git • GitHub
+***Skills Demonstrated:*** Python • Pandas • NumPy  •Matplotlib  •Seaborn  • SQL • SQLite • Statistics • Power BI • Data Analysis • Data Visualization • Git • GitHub
