@@ -1,9 +1,9 @@
 # 📊 HR Workforce Analytics & Employee Performance Dashboard
 ## 📌 Project Overview
 
-The *HR Workforce Analytics & Employee Performance Dashboard is an end-to-end data analytics project designed to analyze workforce structure, employee performance, productivity, salary, attendance, and employee attrition.
+The **HR Workforce Analytics & Employee Performance Dashboard** is an end-to-end data analytics project designed to analyze workforce structure, employee performance, productivity, salary, attendance, and employee attrition.
 
-The project transforms raw employee data into a structured analytical solution using Python, SQL, Statistics, and Power BI. The objective is to provide HR stakeholders with measurable workforce KPIs, identify patterns associated with employee turnover, compare departments, and support data-driven workforce planning and retention strategies.
+The project transforms raw employee data into a structured analytical solution using **Python, SQL, Statistics, and Power BI**. The objective is to provide HR stakeholders with measurable workforce KPIs, identify patterns associated with employee turnover, compare departments, and support data-driven workforce planning and retention strategies.
 
 ## 🎯 Business Problem
 
@@ -52,7 +52,7 @@ The project was developed to:
 
 ## 📁 Dataset Overview
 
-The raw dataset contains 10,050 employee records and 29 features covering:
+The raw dataset contains **10,050 employee records and 29 features** covering:
 
 • Employee demographics
 
@@ -100,7 +100,7 @@ The raw dataset contains 10,050 employee records and 29 features covering:
 
 • Remote-work status
 
-After duplicate removal, the analysis dataset contains 10,047 records.
+After duplicate removal, the analysis dataset contains **10,047 records**.
 
 ## 🛠️ Technology Stack
 
